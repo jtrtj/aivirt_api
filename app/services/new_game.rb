@@ -11,4 +11,14 @@ class NewGame
       GameQuestions.create(game: new_game, question: question)
     end
   end
+
+  def self.questions
+    open_trivia_data.map do |question_data|
+      NewQuestion.new(question_data)
+    end
+  end
+
+  def self.open_trivia_data
+    OpenTrivia.get_game_data
+  end
 end
