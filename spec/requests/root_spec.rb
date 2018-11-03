@@ -6,6 +6,7 @@ describe 'A user' do
       get '/' 
       result = JSON.parse(response.body)
 
+      expect(status).to eq(200)
       expect(result["message"]).to eq("Welcome to the Aivirt API, Documentation can be found at https://github.com/jtrtj/aivirt_api")
     end
   end
