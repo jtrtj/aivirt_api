@@ -19,6 +19,6 @@ class NewGame
   end
 
   def self.open_trivia_data
-    OpenTrivia.get_game_data
+    OpenTriviaConnection.get_game_data
   end
 end
