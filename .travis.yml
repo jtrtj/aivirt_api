@@ -1,0 +1,13 @@
+language: ruby
+cache:
+- bundler
+before_script:
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+deploy:
+  provider: heroku
+  api_key:
+    secure: "kUH6a6Q99HRSmdeMD1Pq3kom80/M08v4jYaBQNsK7HVEX/NbEY4KMuvvQc7GvP+1dxog1mWn0OLBcc+mKSTs8WxrfCo0aguOeRHxckzxJ3FJTi1oyL3+nCFA6mm4omVvhsZ0NQwCnaX1kTx5aKjTeEnyCX4J7CSmpMvTAdFT5R/junU88cHfd4kFKCbNLGxfC6tWg5qPC/ryATRRLP8RfPEP004+EjVLMBWyWT2DyMfKCjZkFLcESNM9wy/3TYuYqnYmYKl3EMa68P7heQzqGUryxAdR/DBnVbD1zIM4JumxAWELW4PN2FU2R+CnVPeXSqaH1xVUXTQ4xvPqz7imerv+yKN5RF9bF9H1Hw3fA99gDoGKbG7ZVDeEbz4uh3QanOcuFWgawmjgzkeHvhMsfjUwOkkNM9bwjHF5nflO6rZ8GBss8zE3AU0NZPaZF1oQx5pCNenpY0Z3qbp+gCD3w6uShIe3YYkW762mAxT3E9nomlL+DmoFPF9AT0cIGwFmgY9jyOWYNsHR7iojemIbyrc74c4WBR4oC9krCuzFMXfNduTbOsRV7fEuOIzbN4SeMMlEiPTk+r89Luu2mcFm3outnAOkVgLABTef8J4HAr9WIfKnb8DrRzBTe40pU8JTN/0O2XiLOifJq1dN73Cod2juHQSdYqNv+HjutGJWYz4="
+  app: aivirt-staging
+  on:
+    repo: jtrtj/aivirt_api
