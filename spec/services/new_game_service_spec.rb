@@ -20,12 +20,12 @@ describe NewGame do
 
       expect(open_trivia_data).to be_an(Array)
       expect(open_trivia_data.count).to eq(10)
-      expect(open_trivia_data[0]).to have_key('category')
-      expect(open_trivia_data[0]).to have_key('type')
-      expect(open_trivia_data[0]).to have_key('difficulty')
-      expect(open_trivia_data[0]).to have_key('question')
-      expect(open_trivia_data[0]).to have_key('correct_answer')
-      expect(open_trivia_data[0]['incorrect_answers']).to be_an(Array)
+      expect(open_trivia_data[0]).to have_key(:category)
+      expect(open_trivia_data[0]).to have_key(:type)
+      expect(open_trivia_data[0]).to have_key(:difficulty)
+      expect(open_trivia_data[0]).to have_key(:question)
+      expect(open_trivia_data[0]).to have_key(:correct_answer)
+      expect(open_trivia_data[0][:incorrect_answers]).to be_an(Array)
     end
   end
 end

@@ -1,7 +1,7 @@
 class OpenTriviaConnection
   def self.get_game_data
     response = self.connection
-    JSON.parse(response.body)["results"]
+    JSON.parse(response.body, symbolize_names: true)[:results]
   end
 
   def self.connection
