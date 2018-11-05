@@ -15,7 +15,6 @@ class UnsplashRandom
   def self.conn
     Faraday.new(:url => 'https://api.unsplash.com') do |faraday|
       faraday.request  :url_encoded
-      faraday.response :logger
       faraday.adapter  Faraday.default_adapter
     end
   end
