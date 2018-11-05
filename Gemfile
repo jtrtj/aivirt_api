@@ -29,12 +29,12 @@ gem 'faker'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 gem 'faraday'
+gem 'factory_bot_rails'
 
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails', '~> 3.8'
   gem 'shoulda-matchers', '~> 3.1'
-  gem 'factory_bot_rails'
   gem 'database_cleaner'
   gem 'simplecov'
 end
