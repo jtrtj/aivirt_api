@@ -31,6 +31,12 @@ ActiveRecord::Schema.define(version: 2018_11_03_224539) do
     t.string "text"
     t.string "correct_answer"
     t.string "incorrect_answers", default: [], array: true
+    t.string "category"
+    t.string "image_url"
+    t.string "image_author"
+    t.string "image_author_profile"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "game_questions", "games"

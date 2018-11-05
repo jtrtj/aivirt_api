@@ -4,6 +4,12 @@ class CreateQuestions < ActiveRecord::Migration[5.2]
       t.string :text
       t.string :correct_answer
       t.string :incorrect_answers, array: true, default: []
+      t.string :category
+      t.string :image_url
+      t.string :image_author
+      t.string :image_author_profile
+
+      t.timestamps
     end
   end
 end
