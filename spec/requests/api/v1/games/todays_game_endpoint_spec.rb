@@ -10,7 +10,7 @@ describe '/api/v1' do
       result = JSON.parse(response.body, symbolize_names: true)
 
       expect(result[:id]).to eq(game_1.id)
-      expect(result[:date]).to eq(game_1.created_at)
+      expect(result[:date]).to eq(game_1.created_at.strftime("%b %d, %Y"))
       expect(result[:questions][0]).to have_key(:question)
       expect(result[:questions][0]).to have_key(:correct_answer)
       expect(result[:questions][0][:answers]).to be_an(Array)
