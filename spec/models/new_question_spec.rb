@@ -17,7 +17,7 @@ describe NewQuestion do
               }
 
       new_question = NewQuestion.new(data)
-              binding.pry
+      
       expect(new_question.category).to eq("Geography")
       expect(new_question.difficulty).to eq("medium")
       expect(new_question.text).to eq("What is the name of the capital of Turkey?")
