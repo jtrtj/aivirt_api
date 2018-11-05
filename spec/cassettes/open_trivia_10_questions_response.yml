@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://opentdb.com/api.php?amount=10&encode=base64
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Nov 2018 21:08:11 GMT
+      Server:
+      - Apache
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Set-Cookie:
+      - PHPSESSID=B5ENDN9lSAcFQ0zO6QEoq3; path=/
+      Strict-Transport-Security:
+      - max-age=31536000
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"response_code":0,"results":[{"category":"RW50ZXJ0YWlubWVudDogTXVzaWM=","type":"bXVsdGlwbGU=","difficulty":"ZWFzeQ==","question":"V2hpY2ggQ2FuYWRpYW4gcmVnZ2FlIG11c2ljaWFuIGhhZCBhIDE5OTMgaGl0IHdpdGggdGhlIHNvbmcgJ0luZm9ybWVyJz8=","correct_answer":"U25vdw==","incorrect_answers":["UmFpbg==","SGFpbA==","U2xlZXQ="]},{"category":"U2NpZW5jZTogR2FkZ2V0cw==","type":"bXVsdGlwbGU=","difficulty":"bWVkaXVt","question":"V2hhdCBhcmUgdGhlIGJhc2Ugc3RhdGlvbiB0cmFja2VycyB1c2VkIGZvciB0aGUgSFRDIFZpdmUgY2FsbGVkPw==","correct_answer":"TGlnaHRob3VzZQ==","incorrect_answers":["TW90aW9u","Q29uc3RlbGxhdGlvbiA=","VHJhY2tlcnM="]},{"category":"RW50ZXJ0YWlubWVudDogSmFwYW5lc2UgQW5pbWUgJiBNYW5nYQ==","type":"bXVsdGlwbGU=","difficulty":"bWVkaXVt","question":"SW4gdGhlIGFuaW1lLCAiU3VwZXIgU29uaWNpbyIsIHdoYXQgaXMgU3VwZXIgU29uaWNvJ3MgZmF2b3JpdGUgZm9vZD8=","correct_answer":"TWFjcm9vbnM=","incorrect_answers":["SWNlIENyZWFt","UGl6emE=","Q2hpcHM="]},{"category":"R2VuZXJhbCBLbm93bGVkZ2U=","type":"bXVsdGlwbGU=","difficulty":"ZWFzeQ==","question":"V2hhdCBpcyB0aGUgbmlja25hbWUgb2YgdGhlIFVTIHN0YXRlIG9mIENhbGlmb3JuaWE\/","correct_answer":"R29sZGVuIFN0YXRl","incorrect_answers":["U3Vuc2hpbmUgU3RhdGU=","QmF5IFN0YXRl","VHJlYXN1cmUgU3RhdGU="]},{"category":"RW50ZXJ0YWlubWVudDogVmlkZW8gR2FtZXM=","type":"Ym9vbGVhbg==","difficulty":"bWVkaXVt","question":"SW4gIk92ZXJ3YXRjaCwiIGFuIGFsbGllZCBNY0NyZWUgd2lsbCBzYXkgIlN0ZXAgcmlnaHQgdXAiIHVwb24gdXNpbmcgaGlzIHVsdGltYXRlIGFiaWxpdHkgRGVhZGV5ZS4=","correct_answer":"VHJ1ZQ==","incorrect_answers":["RmFsc2U="]},{"category":"RW50ZXJ0YWlubWVudDogRmlsbQ==","type":"bXVsdGlwbGU=","difficulty":"aGFyZA==","question":"SW4gMjAxMiwgd2hpY2ggbW92aWUgd29uIGV2ZXJ5IGNhdGVnb3J5IGluIHRoZSAzMm5kICJHb2xkZW4gUmFzcGJlcnJ5IEF3YXJkcyI\/","correct_answer":"SmFjayBhbmQgSmlsbA==","incorrect_answers":["VGhlIEdpcmwgd2l0aCB0aGUgRHJhZ29uIFRhdHRvbw==","VGhvcg==","VGhlIEtpbmcncyBTcGVlY2g="]},{"category":"RW50ZXJ0YWlubWVudDogVmlkZW8gR2FtZXM=","type":"bXVsdGlwbGU=","difficulty":"bWVkaXVt","question":"V2hvIGNyZWF0ZWQgdGhlIHB1bXAgIkYuTC5VLkQuRC4iIE1hcmlvIHVzZXMgaW4gU3VwZXIgTWFyaW8gU3Vuc2hpbmU\/","correct_answer":"RWx2aW4gR2FkZA==","incorrect_answers":["Um9iZXJ0IEZsdWRk","Tmlyb25h","Q3J5Z29y"]},{"category":"RW50ZXJ0YWlubWVudDogVmlkZW8gR2FtZXM=","type":"bXVsdGlwbGU=","difficulty":"ZWFzeQ==","question":"SW4gd2hhdCB5ZWFyIHdhcyBIZWFydGhzdG9uZSByZWxlYXNlZD8=","correct_answer":"MjAxNA==","incorrect_answers":["MjAxMQ==","MjAxMw==","MjAxMg=="]},{"category":"R2VvZ3JhcGh5","type":"bXVsdGlwbGU=","difficulty":"bWVkaXVt","question":"V2hhdCBpcyB0aGUgY2FwaXRhbCBvZiBMaXRodWFuaWE\/","correct_answer":"Vmlsbml1cw==","incorrect_answers":["VGFsbGlubg==","SGVsc2lua2k=","UmlnYQ=="]},{"category":"SGlzdG9yeQ==","type":"bXVsdGlwbGU=","difficulty":"bWVkaXVt","question":"V2hlbiB3YXMgdGhlIEdyYW5kIFBhdHJpb3RpYyBXYXIgaW4gdGhlIFVTU1IgY29uY2x1ZGVkPw==","correct_answer":"TWF5IDl0aCwgMTk0NQ==","incorrect_answers":["U2VwdGVtYmVyIDJuZCwgMTk0NQ==","QXVndXN0IDl0aCwgMTk0NQ==","RGVjZW1iZXIgMTF0aCwgMTk0NQ=="]}]}'
+    http_version: 
+  recorded_at: Mon, 05 Nov 2018 21:08:11 GMT
+recorded_with: VCR 4.0.0

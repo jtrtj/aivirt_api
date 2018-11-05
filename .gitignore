@@ -23,5 +23,3 @@
 /config/master.key
 
 coverage
-
-/spec/cassettes
