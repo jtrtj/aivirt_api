@@ -17,12 +17,15 @@ describe NewQuestion do
               }
 
       new_question = NewQuestion.new(data)
-
+              binding.pry
       expect(new_question.category).to eq("Geography")
       expect(new_question.difficulty).to eq("medium")
       expect(new_question.text).to eq("What is the name of the capital of Turkey?")
       expect(new_question.correct_answer).to eq("Ankara")
       expect(new_question.incorrect_answers).to eq(["Istanbul", "Izmir", "Bursa"])
+      expect(new_question.image_url).to include("jpg", "https://images.unsplash.com")
+      expect(new_question.image_author).to be_a(String)
+      expect(new_question.image_author_profile).to be_a(String)
     end
   end
 end
