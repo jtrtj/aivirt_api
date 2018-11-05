@@ -28,15 +28,15 @@ class NewQuestion
   end
 
   def image_url
-    @image[:urls][:full]
+    image[:urls][:full]
   end
   
   def image_author
-    @image[:user][:name]
+    image[:user][:name]
   end
 
   def image_author_profile
-    @image[:user][:portfolio_url]
+    image[:user][:links][:html]
   end
 
   private
