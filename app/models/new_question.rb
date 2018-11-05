@@ -27,7 +27,23 @@ class NewQuestion
     end
   end
 
+  def image_url
+    image[:urls][:full]
+  end
+  
+  def image_author
+    image[:user][:name]
+  end
+
+  def image_author_profile
+    image[:user][:links][:html]
+  end
+
   private
+
+  def image
+    @image ||= UnsplashRandom.image(category)
+  end
 
   def decode(base64_string)
     Base64.decode64(base64_string)
