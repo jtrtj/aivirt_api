@@ -12,7 +12,7 @@
 #### Introduction:
 The Aivirt API is here to generate a new trivia game each day for [Aivirt](https://jtrtj.github.io/aivirt/). Each day the API requests 10 random questions from [Open Trivia DB](https://opentdb.com/api_config.php). While adding each question to the database, a splash image from [Unsplash](https://unsplash.com/developers) is attached to each question according to its "category". On the deployed front end, each question renders its image as a background.
 
-It is deployed on heroku [here](https://aivirt-api.herokuapp.com/api/)
+It is deployed on heroku [here](https://aivirt-api.herokuapp.com/)
 #### Initial Setup:
 You will need an [Unsplash API Key](https://unsplash.com/developers)(it's free)
 1. `git clone git@github.com:jtrtj/aivirt_api.git`
