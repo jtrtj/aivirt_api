@@ -31,7 +31,7 @@ You will need an [Unsplash API Key](https://unsplash.com/developers)(it's free)
 >
 > to get Today's game:
 >
-> __/api/v1/games/todays-game__
+> __GET /api/v1/games/todays-game__
 >
 
 ```json
@@ -174,7 +174,7 @@ You will need an [Unsplash API Key](https://unsplash.com/developers)(it's free)
 #### Known Issues:
 1. Needs Games index endpoint to provide an archive of games
 1. Needs a system for recording game stats from users
-  * ie. After a user answers the 10 questions front end POSTs to API recording a PlayedGame with a payload of game_id and correct_count.
+   * e.g. After a user answers the 10 questions front end POSTs to API recording a PlayedGame with a payload of game_id and correct_count.
   
 ---
 #### Running Tests:
@@ -199,7 +199,7 @@ Thanks in advance!
 
 ---
 #### Tech Stack:
-* It was built using [Ruby 2.5.3](https://github.com/ruby/ruby/tree/v2_5_3) and [Rails 5.2.1](https://github.com/rails/rails/tree/v5.2.1)
+* Aivirt API is built with [Ruby 2.5.3](https://github.com/ruby/ruby/tree/v2_5_3), [Rails 5.2.1](https://github.com/rails/rails/tree/v5.2.1) and a [PostgreSQL](https://www.postgresql.org/) Database.
 * Tested using RSpec with [VCR](https://github.com/vcr/vcr), [Shoulda-Matchers](https://github.com/thoughtbot/shoulda-matchers), [Factory Bot](https://github.com/thoughtbot/factory_bot_rails) and [Faker](https://github.com/stympy/faker)
 
 
