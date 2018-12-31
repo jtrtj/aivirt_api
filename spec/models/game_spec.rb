@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 describe Game do
@@ -20,7 +22,7 @@ describe Game do
       game_data = game.jsonable_hash
 
       expect(game_data[:id]).to eq(game.id)
-      expect(game_data[:date]).to eq(game.created_at.strftime("%b %d, %Y"))
+      expect(game_data[:date]).to eq(game.created_at.strftime('%b %d, %Y'))
       expect(game_data[:questions]).to be_an(Array)
       expect(game_data[:questions][0]).to have_key(:question)
       expect(game_data[:questions][0]).to have_key(:correct_answer)
