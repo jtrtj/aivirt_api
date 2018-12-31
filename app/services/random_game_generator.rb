@@ -10,6 +10,6 @@ class RandomGameGenerator
   end
 
   def get_ten_questions
-    Question.order("RANDOM()").limit(10)
+    Question.order(Arel.sql("RANDOM()")).limit(10)
   end
 end
