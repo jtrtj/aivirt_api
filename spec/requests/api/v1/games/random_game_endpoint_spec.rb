@@ -9,10 +9,10 @@ describe '/api/v1' do
 
       get '/api/v1/games/random-game'
       result = JSON.parse(response.body, symbolize_names: true)
-
+      
       expect(result[:questions]).to all(have_key(:question))
       expect(result[:questions]).to all(have_key(:correct_answer))
-      expect(result[:questions][:answers]).to all(be_an(Array))
+      expect(result[:questions]).to all(have_key(:answers))
       expect(result[:questions]).to all(have_key(:image_url))
       expect(result[:questions]).to all(have_key(:image_url))
       expect(result[:questions]).to all(have_key(:image_author))
