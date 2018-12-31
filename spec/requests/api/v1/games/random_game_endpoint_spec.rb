@@ -7,7 +7,7 @@ describe '/api/v1' do
     it 'returns a single random question' do
       questions = create_list(:question, 10)
 
-      get '/api/v1/games/random'
+      get '/api/v1/games/random-game'
       result = JSON.parse(response.body, symbolize_names: true)
 
       expect(result[:questions]).to all(have_key(:question))
